@@ -24,6 +24,7 @@ include build/make/target/board/BoardConfigEmuCommon.mk
 include build/make/target/board/BoardConfigGsiCommon.mk
 
 # Resize to 4G to accomodate ASAN and CTS
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 4294967296
 
 BOARD_SEPOLICY_DIRS += device/generic/goldfish/sepolicy/x86
